@@ -1,0 +1,89 @@
+/*
+#FCFFB2 = circle
+#9CFF2E = cactus
+#367E18 = cactus lines
+#C98474 = pot
+#FFC4C4 = cheeks
+#FFF5E4 = eyes
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAF7F0;
+}
+
+.canvas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.circle {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    background-color: #FCFFB2;
+}
+
+.pot {
+    position: absolute;
+    border-bottom: 250px solid #C98474;
+    border-left: 10vmin solid #FCFFB2;
+    border-right: 10vmin solid #FCFFB2;
+    width: 390px;;
+    bottom: 50px;
+    rotate: 180deg;
+}
+
+.pot::after {
+    content: "";
+    position: absolute;
+    box-shadow: 0 -7px 3px -3px black, 0 5px 3px -3px transparent;
+    width: 12.5em;
+    height: 2em;
+}
+
+@media (max-width: 1250px) {
+    .circle {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        width: 60vmin;
+        height: 60vmin;
+        border-radius: 50%;
+        background-color: #FCFFB2;
+    }
+
+    .pot {
+        position: absolute;
+        border-bottom: 140px solid #C98474;
+        border-left: 6vmin solid #FCFFB2;
+        border-right: 6vmin solid #FCFFB2;
+        width: 200px;
+        bottom: 50px;
+        rotate: 180deg;
+    }
+
+    .pot::after {
+        content: "";
+        position: absolute;
+        box-shadow: 0 -7px 3px -3px black, 0 5px 3px -3px transparent;
+        width: 6em;
+    }
+}
